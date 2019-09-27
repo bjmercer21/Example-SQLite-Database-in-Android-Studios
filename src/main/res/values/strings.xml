@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DatabaseProject</string>
+    <string name="welcome">Welcome</string>
+    <string name="uname">User Name</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="companyName"><b><i><u>Company</u></i></b></string>
+    <string name="button1">Employees</string>
+    <string name="button2">Customers</string>
+    <string name="button3">Orders</string>
+    <string name="button4">OrderDetails</string>
+    <string name="button5">Parts</string>
+    <string name="button6">Admin</string>
+    <string name="logout">Logout</string>
+    <string name="choice">Choose person type</string>
+</resources>

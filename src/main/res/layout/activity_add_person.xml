@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addPerson">
+
+    <Button
+        android:id="@+id/customerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/employeeButton"
+        android:text="@string/button2"
+        android:onClick="makeCustomer"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/employeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/customerButton"
+        app:layout_constraintStart_toEndOf="@id/customerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/button1"
+        android:onClick="makeEmployee"
+        />
+
+    <TextView
+        android:id="@+id/tableChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/customerButton"
+        app:layout_constraintStart_toStartOf="@id/customerButton"
+        android:layout_marginBottom="5dp"
+        android:text="@string/choice"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tableChosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/customerButton"
+        app:layout_constraintStart_toStartOf="@id/customerButton"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/newName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tableChosen"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:id="@+id/newUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/uname"
+        />
+
+    <EditText
+        android:id="@+id/newZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Zip"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/password"
+        />
+    <EditText
+        android:id="@+id/newPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newZip"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Phone Numbe"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/newSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Salary"
+        />
+
+    <Button
+        android:id="@+id/createNewEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/submit"
+        android:onClick="makeNewEntry"
+        android:layout_marginBottom="60dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
