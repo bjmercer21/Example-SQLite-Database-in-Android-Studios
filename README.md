@@ -5,3 +5,5 @@ Android Studios project that showed how to use a SQLite Database to store employ
 This project used a SQLite database in an Android application to keep track of employees and inventory data.
   The project was ment to be heavily focused on the database portion, therefore I worked creating views and 
   running queries.
+
+The hardest part of this was to learn how to use the DBHelper class in the Android project.
